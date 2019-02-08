@@ -1,0 +1,31 @@
+.controllers {
+    margin: 2.2em auto;
+
+    &__row { 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    &__key {
+        padding: 2em;
+        color: $white;
+        background-color: $sky_blue;
+        border-radius: 5px;
+        margin: 0 0.5em;
+        @include do-transition( all );
+
+        &:hover {
+            cursor: pointer;
+            background-color: $light_red;
+        }
+
+        &--to-adjust {
+            padding: 2em 2.1em;
+        }
+    }
+
+    &__char {
+        font-weight: bold;
+    }
+}

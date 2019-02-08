@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>HeatMap - Vanilla</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+    <body class="basic-layout">
+        <header class="header">
+            <h1>HeatMap - Vanilla</h1>
+        </header>
+        <main class="main">
+            <div class="main-wrapper">
+                <canvas class="canvas" id="canvas-id" width="1000" height="500"></canvas>
+                <aside class="side-controller">
+                    <ul class="side-controller__wrapper" id="controller-data" data-value="25">
+                        <li>
+                            <span class="side-controller__element" id="increase">+</span>
+                        </li>
+                        <li>
+                            <span class="side-controller__element" id="decrease">-</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="controllers">
+                <div class="controllers__row">
+                    <div class="controllers__key" id="up">
+                        <span class="controllers__char">W</span>
+                    </div>
+                </div>
+                <div class="controllers__row">
+                    <div class="controllers__key" id="left">
+                        <span class="controllers__char">A</span>
+                    </div>
+                    <div class="controllers__key controllers__key--to-adjust" id="down">
+                        <span class="controllers__char">S</span>
+                    </div>
+                    <div class="controllers__key" id="right">
+                        <span class="controllers__char">D</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Heat Map - Vanilla</p>
+        </footer>
+        <script src="./assets/js/heatClass.js"></script>
+        <script src="./assets/js/data.js"></script>
+        <script src="./assets/js/logic.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+.side-controller {
+
+    &__wrapper {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 420px;
+    }
+
+    &__element {
+        display: block;
+        margin: $auto;
+        padding: 0.8em 1.2em;
+        color: $white;
+        font-size: 1.5em;
+        background-color: $sky_blue;
+        border-radius: 50%;
+        text-align: center;
+        @include do-transition( all );
+
+        &:hover {
+            cursor: pointer;
+            background-color: $light_red;
+        }
+    }
+}

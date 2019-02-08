@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+
+// abstracts.
+@import "abstract/variables";
+@import "abstract/mixins";
+
+// components.
+@import "components/header";
+@import "components/main";
+@import "components/canvas";
+@import "components/side-controller";
+@import "components/controllers";
+@import "components/footer";
+
+
+// layout.
+@import "layout/general-layout.scss";
+
+// vendors.
+@import "vendors/normalize";
